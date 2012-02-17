@@ -1,0 +1,67 @@
+/*
+ * Copyright 2010 PRODYNA AG
+ *
+ * Licensed under the Eclipse Public License (EPL), Version 1.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.opensource.org/licenses/eclipse-1.0.php or
+ * http://nabuccosource.org/License.html
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.nabucco.framework.reporting.facade.datatype; 
+
+import org.nabucco.framework.base.facade.datatype.NabuccoDatatype;
+import org.nabucco.framework.base.facade.datatype.Name;
+import org.nabucco.framework.base.facade.datatype.Flag;
+import org.nabucco.framework.base.facade.datatype.Description;
+import org.nabucco.framework.base.facade.datatype.net.Url;
+import org.nabucco.framework.base.facade.datatype.code.Code;
+import org.nabucco.framework.base.facade.datatype.reporting.ReportFormat;
+
+@Author         Nicolas Moser
+@Company        PRODYNA AG
+@Date           2010-09-27
+@Version        1.0
+@Description    Configuration information for a report creation
+public Datatype ReportConfiguration extends NabuccoDatatype {
+
+	@Description name of this ReportConfiguration
+	private Basetype Name[1] name;
+	
+	@Description description of this ReportConfiguration
+	private Basetype Description[1] description;
+	
+	@Description name of the report file
+	private Basetype Name[1] reportFileName;
+	
+	@Description script identifier
+	private Basetype Name[1] scriptId;
+	
+	@Description template identifier
+	private Basetype Name[1] templateId;
+	
+	@Description the url where the template is placed
+    private Basetype Url[1] templateUrl;
+	
+	@Description the url where the report is stored for local access
+	private Basetype Url[1] localOutputBaseUrl;
+	
+	@Description the url where the report is stored for remote access
+	private Basetype Url[1] remoteOutputBaseUrl;
+	
+	@Description the identifier of the report
+	@CodePath nabucco.testautomation.report
+	private Datatype Code[1] reportType;
+	
+	@Description should the report be executed synchronous or asynchronous 
+	private Basetype Flag[1] synchronous;
+	
+	@Description the putput format of the report
+	private Enumeration ReportFormat[1] reportFormat;
+}

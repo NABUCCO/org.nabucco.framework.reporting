@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="out/ide/main/gen" path="src/main/gen"/>
+	<classpathentry kind="src" output="out/ide/main/man" path="src/main/man"/>
+	<classpathentry kind="src" output="out/ide/test/gen" path="src/test/gen"/>
+	<classpathentry kind="src" output="out/ide/test/man" path="src/test/man"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.nabucco.framework.reporting.facade.service"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/org.nabucco.framework.reporting/lib/facade/org.nabucco.common.cache.jar"/>
+	<classpathentry kind="lib" path="/org.nabucco.framework.reporting/lib/facade/org.nabucco.common.extension.jar"/>
+	<classpathentry kind="lib" path="/org.nabucco.framework.reporting/lib/facade/org.nabucco.framework.base.facade.jar"/>
+	<classpathentry kind="output" path="out/ide"/>
+</classpath>
